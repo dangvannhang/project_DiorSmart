@@ -1,0 +1,37 @@
+1. Link document
+    1.1 https://blog.pusher.com/ecommerce-laravel-vue-part-1/
+    1.2 https://github.com/neoighodaro-articles/e-commerce-laravel-vue
+2. Install
+    2. 1 Install laravel
+    - composer create-project laravel/laravel my-laravel
+    2.2. Install vuejs 
+    - composer require laravel/ui 
+    - php artisan ui vue
+    2.3 Install vue-router 
+    - npm install vue-router 
+
+
+3. Cac viec da hoan thanh
+
+    3.1 Tao model 
+    3.2 Tao migration
+    3.3 Install laravel/passport de chay seeder
+    3.4 Tao seeder cho products, users
+    3.5 Config Passport cho provider, config
+    3.6 Build xong controller index cua usercontroller
+    3.7 Cuoi cung cung build xong het api cho user, product, order
+    3.8 Cai vuejs vao 
+    3.9 Cai vue-router vao nua
+    3.10 Edit file webpack.mix.js
+
+4. Dang lam
+    
+    
+
+5. Loi 
+    5.1 loi ve thieu package passport
+    5.2 loi ve kieu du lieu DateTime
+        + Thay bang Cacbon:
+    5.3 Loi thieu khai bao DB trong DatabaseSeeder
+    
+
