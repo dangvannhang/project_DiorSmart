@@ -8,6 +8,8 @@ use App\Models\User;
 use Validator;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Models\Product;
+use App\Models\Order;
 
 class UserController extends Controller
 {
@@ -77,7 +79,7 @@ class UserController extends Controller
 
 
     //gets all the orders of a user and returns them.
-    public function showOrders(User $user)
+    public function showOrder(User $user)
     {
         return response()->json($user->orders()->with(['product'])->get());
     }

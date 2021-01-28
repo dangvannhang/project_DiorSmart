@@ -6,6 +6,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
+use App\Models\User;
+use App\Models\Product;
+
 
 class Order extends Model
 {
@@ -21,9 +24,11 @@ class Order extends Model
   
 
     public function user() {
-        return $this->belongto(User::class,'user_id');
+        return $this->belongsTo(User::class,'user_id');
     }
+
     public function product() {
-        return $this->belongto(Product::class,'product_id');
+        return $this->belongsTo(Product::class,'product_id');
     }
+
 }
