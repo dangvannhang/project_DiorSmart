@@ -12,7 +12,7 @@
                         Price: <input type="text" v-model="data.price">
                         <textarea v-model="data.description" placeholder="description"></textarea>
                         <span >
-                            <img :src="data.image" v-show="data.image != null">
+                            <img :src="data.image" v-show="data.image != null" :class="img">
                             <input type="file" id="file" @change="attachFile">
                         </span>
                     </slot>
@@ -119,5 +119,9 @@
     .modal-leave-active .modal-container {
         -webkit-transform: scale(1.1);
         transform: scale(1.1);
+    }
+    .img {
+        width:auto;
+        height: auto;
     }
 </style>
